@@ -21,6 +21,14 @@ Download dependencies
 ```bash
 pip install -r requirements.txt
 ```
+Add a file to database called secret.py
+```python
+#Add a link to your database
+DATABASE_LOGIN = "password@domain:portnumber"
+
+#Generate a secret key for HS256 jwt encoding
+SECRET_KEY = "secret key"
+````
 Run the project
 ```bash
 python -m uvicorn main:app
